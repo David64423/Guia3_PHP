@@ -1,0 +1,58 @@
+:root{
+    --bp: 1px solid black;
+}
+
+body{
+    background-color:greenyellow;
+    box-sizing:content-box;
+}
+
+.container{
+    border: var(--bp);
+}
+
+#nombre{
+    display: flex;
+    justify-content: center;
+}
+
+#alta{
+    border: var(--bp);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#altaEmpleados{
+width: 50vw;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+#altaClientes{
+width: 49vw;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#listar{
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formAlta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
