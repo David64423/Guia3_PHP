@@ -132,7 +132,7 @@
                             <td><?php echo $registro['emp_tel']; ?></td>
                             <td><?php echo $registro['emp_sueldo']; ?></td>
                             <td><?php echo $registro['emp_fechaIn']; ?></td>
-                            <td></td>
+                            <td> <?php echo sacarAntiguedad($registro['emp_fechaIn']) ?> </td>
                             <td><?php echo $registro['emp_direccion']; ?></td>
                             <td></td>
 
