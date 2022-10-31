@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="../css/tablas.css">
 </head>
 <body>
+    <h1>Clientes </h1> <br><br>
     <?php
     require "../src/clases/persona.php";
     require "../src/clases/cliente.php";
 
     Cliente::listar();
     ?>
+    <br><br>
+    <a href="../index.php"><button>Volver Al inicio</button></a>
 </body>
 </html>
 

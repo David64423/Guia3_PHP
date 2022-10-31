@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="../css/tablas.css">
 </head>
 <body>
+    <h1>Empleados</h1> <br><br>
     <?php
+    require "../funciones.php";
     require "../src/clases/persona.php";
     require "../src/clases/empleado.php";
 
     Empleado::listar();
     ?>
+<br><br>
+<a href="../index.php"><button>Volver Al inicio</button></a>
 </body>
 </html>
 

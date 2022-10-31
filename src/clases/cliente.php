@@ -61,7 +61,7 @@
 
             else{
                 ?>
-                <h2>ERROR AL HACER LA CONSULTA SQL.</h2>
+                <h2>NO SE ENCONTRARON RESULTADOS</h2>
                 <?php
             }
             

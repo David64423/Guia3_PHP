@@ -15,3 +15,5 @@
     $nuevoEmpleado= new Empleado($nombre,$apellido,$dni,$tel,$fechaIn,$sueldo,$rol,$direccion);
     $nuevoEmpleado->darDeAlta();
 ?>
+<br><br>
+<a href="../index.php"><button>Volver Al inicio</button></a>

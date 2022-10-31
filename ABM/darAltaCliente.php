@@ -12,3 +12,5 @@
     $nuevoCliente->darDeAlta();
 
 ?>
+<br><br>
+<a href="../index.php"><button>Volver Al inicio</button></a>

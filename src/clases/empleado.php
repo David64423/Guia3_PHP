@@ -1,7 +1,6 @@
 <?php
 
    
-    
 
     
     class Empleado extends Persona{
@@ -61,7 +60,7 @@
                             <td><?php echo $registro['emp_tel']; ?></td>
                             <td><?php echo $registro['emp_sueldo']; ?></td>
                             <td><?php echo $registro['emp_fechaIn']; ?></td>
-                            <td></td>
+                            <td> <?php echo sacarAntiguedad($registro['emp_fechaIn']) ?> </td>
                             <td><?php echo $registro['emp_direccion']; ?></td>
                             <td></td>
 
@@ -74,7 +73,7 @@
 
             else{
                 ?>
-                <h2>ERROR AL HACER LA CONSULTA SQL.</h2>
+                <h2>NO SE ENCONTRARON RESULTADOS.</h2>
                 <?php
             }
             
@@ -155,6 +154,10 @@
 
         public function getNombre(){
             return $this->nombre;
+        }
+
+        public function getFechaIn(){
+            return $this->fechaIn;
         }
         
     }
