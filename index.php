@@ -28,7 +28,7 @@
                         <p>DNI: <input name="dni" type="text"></p>
                         <p>Dirección:<input name="direccion" type="text"></p>
                         <p>Tel: <input name="tel" type="text"></p>
-                        <input type="submit" value="Cargar cliente" formaction="" formmethod="POST">
+                        <input type="submit" value="Cargar cliente" formaction="ABM/darAltaCliente.php" formmethod="POST">
                     </form>
 
             
@@ -49,11 +49,11 @@
                         <p>Sueldo<input name="sueldo" type="number" name="" step=0.25></p>
                         <p>Rol</p>
                         <select name="rol">
-                            <option value="admin">Admin</option>
-                            <option value="empleado">Empleado</option>
+                            <option value=1>Admin</option>
+                            <option value=2>Empleado</option>
                         </select>
                         <p>Fecha de ingreso:<input name="fechaIn" type="date"></p>
-                        <input type="submit" value="Cargar Empleado" formaction="" formmethod="POST">
+                        <input type="submit" value="Cargar Empleado" formaction="ABM/darAltaEmpleado.php" formmethod="POST">
                     </form>
 
 
@@ -67,19 +67,19 @@
 
                 <div>
                     <form>
-                    <input type="text">
-                    <select name="">
-                        <option value="cliente">Cliente</option>
-                        <option value="empleado">Empleado</option>
+                    <p>Nombre:<input name="busqueda" type="text"></p>
+                    <select name="op">
+                        <option value=1>Cliente</option>
+                        <option value=2>Empleado</option>
                     </select>
-                    <input type="submit" value="Buscar">
+                    <input type="submit" value="Buscar" formmethod="GET" formaction="ABM/buscar.php">
                     </form>
                 </div>
 
                 <div>
 
-                    <button><a href="">Listar Clientes</a></button>
-                    <button><a href="">Listar Empleados</a></button>
+                    <button><a href="ABM/listarClientes.php">Listar Clientes</a></button>
+                    <button><a href="ABM/listarEmpleados.php">Listar Empleados</a></button>
 
 
                 </div>

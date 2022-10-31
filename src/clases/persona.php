@@ -19,7 +19,7 @@
 
         abstract public function darDeAlta();
 
-        abstract  public static function buscar();
+        abstract  public static function buscar($busqueda);
 
         protected function saludar (){
             echo "Hola soy ". $this->nombre." ".$this->apellido." y soy de la clase [".strtolower((new ReflectionClass($this))->getShortName())."].";
