@@ -3,17 +3,19 @@
         protected $nombre;
         protected $apellido;
         protected $dni;
-        protected $tel;
+        
+        
 
-        public function __construct($nombre,$apellido,$dni,$tel)
+        public function __construct($nombre,$apellido,$dni)
         {
             $this->nombre = $nombre;
             $this->apellido = $apellido;
             $this->dni= $dni;
-            $this->tel=$tel;
+            
+
         }
 
-        abstract public function mostrarDatos();
+        abstract public static function listar();
 
         abstract public function darDeAlta();
 
