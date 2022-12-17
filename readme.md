@@ -1,0 +1,1 @@
+Este trabajo fue realizado con el fin de entregarselo a mi profesora demi instituto en la carrera Analisis de Sistemas. El proposito del trabajo era poder discrepar un poco en la Poo de PHP y llegar a un mejor comprendimiento de esta.
